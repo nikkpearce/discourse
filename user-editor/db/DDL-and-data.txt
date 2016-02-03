@@ -1,0 +1,23 @@
+-- PATH=$PATH:/Applications/MAMP/Library/bin
+-- export PATH
+-- mysql -h localhost test < DDL-and-data.txt
+-- mysql -u root -p
+-- root root
+-- drop table name_of_table
+
+-- create table
+create table user (
+  ID int NOT NULL AUTO_INCREMENT,
+  user_name varchar(50),
+  first_name varchar(50),
+  last_name varchar(50),
+  password varchar(50),
+  type varchar(50),
+  PRIMARY KEY (ID)
+);
+
+-- add sample data
+insert into user (user_name, first_name, last_name, password, type) values ('aaa', 'arron', 'ferguson', '123', 'admin');
+insert into user (user_name, first_name, last_name, password, type) values ('jjj', 'jim', 'parry', '123', 'admin');
+insert into user (user_name, first_name, last_name, password, type) values ('jaa', 'jason', 'harrison', '123', 'admin');
+

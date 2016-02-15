@@ -1,64 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Adding, Editing, Deleting Records</title>
-    <meta charset="utf-8"/>
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Hind);
-
-      body {
-        font-family: 'Hind', sans-serif;
-      }
-
-      table {
-        background-color: #c9f0e2;
-        border: solid 1px;
-      }
-      td {
-        border-bottom: solid 1px;
-        padding: 4px;
-      }
-    </style>
-  </head>
-  <body>
-
-    <div id="content">
-      <p><i>Only the first name is editable, but you can easily add the same JavaScript functionality to other fields.</i></p>
-      <table id="users">
-        <thead>
-          <tr>
-            <th class="first_name_header"><span>First Name</span></th>
-            <th class="last_name_header"><span>Last Name</span></th>
-            <th class="login_header"><span>User Name</span></th>
-              <th class="password_header"><span>Password</span></th>
-            <th class="delete_header"><span>Delete</span></th>
-            <th class="delete_header"><span>Update</span></th>
-          </tr>
-        </thead>
-
-        <tbody id='userrows'>
-          <!-- THIS SECTION WILL BE REPLACED BY SERVER GENERATED ROWS -->
-          <tr>
-            <td class="first_name"><span>aaa</span></td>
-            <td class="last_name"><span>bbb</span></td>
-            <td class="user_name"><span>uniqueloginname</span></td>
-              <td class="password"><span>uniqueloginname</span></td>
-            <td><input id="uniqueloginname" class="delete" type="button" value="Delete"/></td>
-          </tr>
-          <!-- THIS SECTION WILL BE REPLACED BY SERVER GENERATED ROWS -->
-        </tbody>
-      </table>​
-      <form id="addNewUser">
-        <input id="addFirstName" type="text" placeholder="First name" required="required"/>
-        <input id="addLastName" type="text" placeholder="Last name" required="required"/>
-        <input id="addUserName" type="text" placeholder="Username" required="required"/>
-        <input id="addPassword" type="text" placeholder="Password" required="required"/>
-        <input id="submitNewUser" type="submit" value="Add"/>
-      </form>
-    </div>
+<?php
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    require_once('../libs/PHPTAL-1.3.0/PHPTAL.php');
+
+    // render the whole page using PHPTAL
+
+    // finally, create a new template object
+    $template = new PHPTAL('user-editor.xhtml'); //CHANGE index.xhtml
+
+    // now add the variables for processing and that you created from above:
+    $template->page_title = "Index Page with PHPTAL";
+
+
+    // execute the template
+    try {
+        echo $template->execute();
+    }
+    catch (Exception $e){
+        // not much else we can do here if the template engine barfs
+        echo $e;
+    }
+
+
+?>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
 
         $(document).ready(function() {
@@ -195,6 +161,3 @@
         });
 
     </script>
-
-  </body>
-</html>

@@ -2,7 +2,7 @@
 
 // Front Controller
 
-require_once('./libs/PHPTAL-1.3.0/PHPTAL.php');
+require_once('../libs/PHPTAL-1.3.0/PHPTAL.php');
 require_once('init.php');
 loadScripts();
 

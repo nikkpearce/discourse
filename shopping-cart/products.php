@@ -15,12 +15,15 @@ loadScripts();
             $price = $row['item_price'];
             $desc = $row['description'];
             $image = $row['image'];
-            $html .= "
-                        <div class='col s2'>
+            $html .= "  <div class='container'>
+                            <div class='row'>
+                        <div class='.col-md-4'>
                         <div data-sku-desc='$sku'>$desc</div>
                         <div data-sku-price='$sku'>$price</div>
                         <div><data-sku-image=$sku'><img src='$image'/></div>
                         <div><input data-sku-add='$sku' type='button' value='Add'/></div>
+                      </div>
+                      </div>
                       </div>";
         }
         echo $html;

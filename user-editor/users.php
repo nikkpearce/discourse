@@ -87,7 +87,6 @@ loadScripts();
                   <td class='user_name'><span>$user_name</span></td>
                   <td class='password'><span>$user_name</span></td>
                   <td><input id='d-$user_name' class='delete' type='button' value='Delete'/></td>
-                  <td><input id='u-$user_name' class='update' type='button' value='Update'/></td>
                   </tr>";
             }
             echo $html;

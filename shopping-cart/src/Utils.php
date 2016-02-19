@@ -1,9 +1,5 @@
 <?php
 
-
-// No real design pattern here although I suppose you could categorize it as
-// a Helper Class; but it's more of a utilities class with a bunch of
-// helper methods in it - a "catch all" really
 class Utils {
 
     public static function isAJAX() {

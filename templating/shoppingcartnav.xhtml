@@ -1,4 +1,4 @@
-<!-- View Fragment --><nav id="nav" role="navigation" class="navbar navbar-inverse navbar-fixed-top" metal:define-macro="nav_bar">
+<!-- View Fragment --><nav id="nav" role="navigation" class="navbar navbar-inverse navbar-fixed-top" metal:define-macro="shoppingcart_nav_bar">
  
         
 <div class="container">
@@ -20,6 +20,28 @@
                     
                 
                 </ul>
+    
+<div class="btn-group">
+  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    Shopping Cart<span class="badge">2</span>
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <input type="button" value="Start Cart" id="startCart" />
+        <input type="button" value="Cancel Cart" id="cancelCart" />
+        
+<h2>Cart Summary</h2>
+        
+<ul id="shoppingCart">
+          <!--<li data-item-qty="1" data-item-sku="sk-438s3x">Coffee Cup (1) &#160;
+            <input type="button" data-remove-button="remove" value="X"/></li>-->
+        </ul>
+        <input type="button" value="Check Out" id="checkoutcart" />
+  </ul>
+</div>
+        
+    
+      
             </div>
             <!-- /.navbar-collapse -->
         </div>

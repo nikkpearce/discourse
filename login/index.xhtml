@@ -25,50 +25,6 @@
         </div>
       </div>
 
-      <!--<div id="shoppingCartContainer" tal:condition="php: Session::get('isLoggedIn')">
-
-        <table id="productTable">
-
-          <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Add</th>
-          </tr>
-
-          <tr>
-            <td>Toaster</td>
-            <td><input data-sku-qty="sk-2843y" type="number" value="1" min="1" max="10" step="1"/></td>
-            <td>14.99</td>
-            <td><input data-sku-add="sk-2843y" type="button" value="Add"/></td>
-          </tr>
-          <tr>
-            <td>Napkins (200 pack)</td>
-            <td><input data-sku-qty="sk-327623z" type="number" value="1" min="1" max="10" step="1"/></td>
-            <td>3.99</td>
-            <td><input data-sku-add="sk-327623z" type="button" value="Add"/></td>
-          </tr>
-          <tr>
-            <td>Coffee Cup</td>
-            <td><input data-sku-qty="sk-438s3x" type="number" value="1" min="1" max="10" step="1"/></td>
-            <td>1.99</td>
-            <td><input data-sku-add="sk-438s3x" type="button" value="Add"/></td>
-          </tr>
-
-        </table>
-        <input type="button" value="Start Cart" id="startCart"/>
-        <input type="button" value="End Cart" id="endCart"/>
-        <h2>Cart Summary</h2>
-        <ul id="shoppingCart">
-          <li data-item-qty="1" data-item-sku="sk-438s3x">Coffee Cup (1) &#160;
-            <input type="button" data-remove-button="remove" value="X"/></li>
-        </ul>
-        <p id="cartTotal">Total: </p>
-        <input type="button" value="checkout" id="checkout"/>
-        <span style="display: inline; font-size: 8pt;"><i>You'll see taxes and other shipping costs (ha ha) during checkout.</i></span>
-
-      </div>-->
-
         <div class="container">
         <div id="loginFormContainer" tal:condition="php: !Session::get('isLoggedIn')">
 
@@ -95,9 +51,8 @@
 
         <form id="logoutForm">
           <fieldset>
-            <legend>Logout Form</legend>
-            <label for="password">Password: </label>
-            <input id="logoutbutton" type="button" value="Logout"/>
+            <a href="../admin-dashboard/dashboard.php" class="btn btn-info" role="button">Access Administrative Dashboard</a>
+            <input id="logoutbutton" type="button" value="Logout" class="btn btn-default"/>
             <input type="hidden" value="logout" name="logoutButton"/>
           </fieldset>
       

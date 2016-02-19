@@ -69,24 +69,25 @@
 
       </div>-->
 
-      <div id="loginFormContainer" tal:condition="php: !Session::get('isLoggedIn')">
+        <div class="container">
+        <div id="loginFormContainer" tal:condition="php: !Session::get('isLoggedIn')">
 
         <form id="loginForm">
           <fieldset>
-            <legend>Register</legend>
+            <legend>Login to Admin Dashboard</legend>
             <input id="user_name" type="text" placeholder="user_name" name="user_name"
-              autofocus="autofocus"/><br/><br/>
+              autofocus="autofocus" class='form-control'/><br/><br/>
 
-            <input id="password" type="password" placeholder="password" name="password"/><br/><br/>
+            <input id="password" type="password" placeholder="password" name="password" class='form-control'/><br/><br/>
 
-            <input id="loginbutton" type="button" value="Login"/>
-            <input id="resetLoginForm" type="reset" value="Reset"/>
+            <input id="loginbutton" type="button" class='btn btn-primary' value="Login"/>
+            <input id="resetLoginForm" type="reset" class='btn btn-primary' value="Reset"/>
 
           </fieldset>
         </form>
 
       </div>
-
+            </div>
 
 <!-- tal:condition="exists: isLoggedIn" -->
 
@@ -103,11 +104,9 @@
         </form>
           
           
-   <a href="../user-editor/user-editor.html">Add New Admin User</a>
       </div>
 
       <div id="messages">
-        <p>Messages:</p>
         <ul id="talMessages" tal:condition="php: count(messages) GT 0">
           <li tal:repeat="msg messages" class="${msg/type}"><span tal:content="msg/text"></span></li>
         </ul>

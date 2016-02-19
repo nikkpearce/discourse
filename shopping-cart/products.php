@@ -21,7 +21,7 @@ loadScripts();
                         <div data-sku-desc='$sku'>$desc</div>
                         <div data-sku-price='$sku'>$price</div>
                         <div><data-sku-image=$sku'><img src='$image'/></div>
-                        <div><input data-sku-add='$sku' type='button' value='Add'/></div>
+                        <div><input data-sku-add='$sku' type='button' class='btn btn-primary' value='Add'/></div>
                       </div>
                       </div>
                       </div>";

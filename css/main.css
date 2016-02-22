@@ -1,12 +1,42 @@
-/* HEADER IMAGE SHOPPING CART */
-header{
-background-image:url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351");    
-background-repeat:no-repeat !important;
--webkit-background-size:cover !important;
--moz-background-size:cover !important;
--o-background-size:cover !important;
-background-size:cover !important;
-background-position:center !important;
+/* HEADER IMAGE SHOPPING CART */ 
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image:url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351");   
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
 }
 
 

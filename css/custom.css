@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Muli);
 body {
   background-color: #FAFAFA; /*f4f5f6;*/
-  color: #fff;
+  color: #7d7d7d;
   transition: all .3s cubic-bezier(.645, .045, .355, 1);
   font-family: 'Muli', arial;
   font-weight: 400;

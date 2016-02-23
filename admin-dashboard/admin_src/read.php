@@ -21,6 +21,7 @@ if($num>0){
     echo "<table class='table table-bordered table-hover'>";
      
         // creating our table heading
+        echo "<thead>";
         echo "<tr>";
             echo "<th class='width-30-pct'>User Name</th>";
             echo "<th class='width-30-pct'>First Name</th>";
@@ -29,6 +30,8 @@ if($num>0){
             echo "<th>Type</th>";
             echo "<th style='text-align:center;'>Action</th>";
         echo "</tr>";
+        echo "</thead>";
+        echo "<tbody>";
          
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
@@ -59,6 +62,7 @@ if($num>0){
         }
          
     //end table
+        echo "</tbody>";
     echo "</table>";
      
 }

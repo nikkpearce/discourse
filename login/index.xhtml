@@ -25,14 +25,15 @@
         </div>
       </div>
 
+        <div class="row">
         <div class="container">
-        <div id="loginFormContainer" tal:condition="php: !Session::get('isLoggedIn')">
-
+        <div id="loginFormContainer" class="col-md-4 col-md-offset-4" tal:condition="php: !Session::get('isLoggedIn')">
+          <br/><br/><br/>
         <form id="loginForm">
           <fieldset>
             <legend>Login to Admin Dashboard</legend>
             <input id="user_name" type="text" placeholder="user_name" name="user_name"
-              autofocus="autofocus" class='form-control'/><br/><br/>
+              autofocus="autofocus" class='form-control'/><br/>
 
             <input id="password" type="password" placeholder="password" name="password" class='form-control'/><br/><br/>
 
@@ -69,7 +70,7 @@
         </ul>
       </div>
       <br/><br/><br/>
-        
+    </div>    
     </div>
       
     

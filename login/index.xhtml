@@ -71,12 +71,18 @@
           
       </div>
 
-      <div id="messages">
-        <ul id="talMessages" tal:condition="php: count(messages) GT 0">
+<div class="row">
+<div class="container">
+<br />
+      <div id="messages" style="" class="col-md-4 col-md-offset-4">
+        <ul id="talMessages" tal:condition="php: count(messages) GT 0" style="list-style: none !important;">
+    
           <li tal:repeat="msg messages" class="${msg/type}"><span tal:content="msg/text"></span></li>
         </ul>
         <ul id="AJAXMessages">
         </ul>
+      </div>
+      </div>
       </div>
       <br/><br/><br/>
     </div>    

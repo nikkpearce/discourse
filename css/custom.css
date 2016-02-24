@@ -272,3 +272,17 @@ header {
     height: 30px;
     width: 30px;
 }
+
+/* Login */
+
+#talMessages, #AJAXMessages{
+  list-style-type: none;
+  
+  font-weight: bolder;
+  color:#C0392B;
+  -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}

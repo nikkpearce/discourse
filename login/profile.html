@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form id='myForm'>
+	<input type='' id='myfiles' multiple/>
+	<button id='upload'>Uploads</button>
+
+</form>
+<script type="text/javascript">
+	var myfiles = document.getElementById("myfiles");
+	var upload = document.getElementById("upload");
+
+	upload.onclick = function(e){
+		e.preventDefault();
+	console.log(myfiles.files);	
+	}
+	
+</script>
+
+</body>
+</html>

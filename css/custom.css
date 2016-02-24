@@ -59,6 +59,11 @@ h5 {
 }
 
 
+legend{
+      padding: 0 0 10px 0!important;
+}
+
+
 /* Nav */
 
 .nav > li > a {
@@ -242,4 +247,28 @@ header {
   padding: 60px 0;
   color: #787878;
   text-align: left;
+}
+
+.btn2{
+      display: inline-block;
+    padding: 7px 7px 7px 9px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    /* border: 1px solid transparent; */
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
 }

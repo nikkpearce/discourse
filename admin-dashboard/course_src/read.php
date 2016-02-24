@@ -26,7 +26,7 @@ if($num>0){
             echo "<th class='width-30-pct'>Course Description</th>";
             echo "<th>Price</th>";
             echo "<th>SKU</th>";
-            echo "<th>Course Image</th>";
+            echo "<th class='width-30-pct'>Course Image</th>";
             echo "<th style='text-align:center;'>Action</th>";
         echo "</tr>";
          
@@ -51,13 +51,13 @@ if($num>0){
                     echo "<div class='product-id display-none'>{$ID}</div>";
                      
                     // edit button
-                    echo "<div class='btn btn-info edit-btn margin-right-1em'>";
-                        echo "<span class='glyphicon glyphicon-edit'></span> Edit";
+                    echo "<div class='btn2 btn-info edit-btn'>";
+                        echo "<span class='glyphicon glyphicon-edit'></span>";
                     echo "</div>";
                      
                     // delete button
-                    echo "<div class='btn btn-danger delete-btn'>";
-                        echo "<span class='glyphicon glyphicon-remove'></span> Delete";
+                    echo "<div class='btn2 btn-danger delete-btn'>";
+                        echo "<span class='glyphicon glyphicon-remove'></span>";
                     echo "</div>";
                 echo "</td>";
             echo "</tr>";

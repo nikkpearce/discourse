@@ -39,23 +39,23 @@ if($num>0){
              
             // ADMIN USERS ROW
             echo "<tr>";
-                echo "<td>{$user_name}</td>";
-                echo "<td>{$first_name}</td>";
-                echo "<td>{$last_name}</td>";
-                echo "<td>{$password}</td>";
-                echo "<td>{$type}</td>";
-                echo "<td style='text-align:center;'>";
+                echo "<td style='width:10%;'>{$user_name}</td>";
+                echo "<td style='width:10%;'>{$first_name}</td>";
+                echo "<td style='width:10%;'>{$last_name}</td>";
+                echo "<td style='width:10%;'>{$password}</td>";
+                echo "<td style='width:10%;'>{$type}</td>";
+                echo "<td style='text-align:center;width:10%'>";
                     // add the record id here, it is used for editing and deleting admin users
                     echo "<div class='admin-id display-none'>{$ID}</div>";
                      
                     // ADMIN EDIT BUTTON
-                    echo "<div class='btn btn-info admin-edit-btn margin-right-1em'>";
-                        echo "<span class='glyphicon glyphicon-edit'></span> Edit";
+                    echo "<div class='btn2 btn-info admin-edit-btn'>";
+                        echo "<span class='glyphicon glyphicon-edit'></span>";
                     echo "</div>";
                      
                     // ADMIN DELETE BUTTON
-                    echo "<div class='btn btn-danger admin-delete-btn'>";
-                        echo "<span class='glyphicon glyphicon-remove'></span> Delete";
+                    echo "<div class='btn2 btn-danger admin-delete-btn'>";
+                        echo "<span class='glyphicon glyphicon-remove'></span>";
                     echo "</div>";
                 echo "</td>";
             echo "</tr>";

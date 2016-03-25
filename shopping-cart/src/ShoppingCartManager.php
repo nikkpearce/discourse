@@ -30,6 +30,7 @@ class ShoppingCartManager {
         $sql = "UPDATE cart SET state = 'checked out' WHERE ID = $id";
         $count = $this->db->affectRows($sql);
         return $count;
+        alert ("Checked out");
     }
 
     public function addItemsToCart($items, $cart_id) {

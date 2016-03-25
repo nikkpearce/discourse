@@ -114,9 +114,28 @@ legend{
 
 }
 
+.menu-remove{
+    color: #fff;
+    background-color: #787878;
+    border-radius: 100px;
+    border: 0px;
+    width: 20px;
+    padding: 0px 6px 0px 6px;
+    font-size: bolder !important;
+    font-family: arial, helvetica, sans-serif;
+}
+
 .dropdown-submenu {
   position: relative;
 }
+
+.a_drop_down{
+      display: inline-block;
+    height: 47px;
+    padding: 14px 12px 0 12px;
+    border-radius: 0px;
+}
+
 
 .dropdown-submenu>.dropdown-menu {
   top: 0;
@@ -180,6 +199,9 @@ legend{
 
 }
 
+.cart-items-ul{
+-webkit-padding-start: 0px !important;
+}
 
 .nav-app-controls li{
   background-color:#0D47A1!important;
@@ -205,6 +227,10 @@ legend{
   border-radius: 50px;
 }
 
+.dropdown-menu li{
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+}
 
 /* App UI */
 

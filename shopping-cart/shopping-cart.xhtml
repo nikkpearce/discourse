@@ -9,22 +9,15 @@
 
         <!-- Jumbotron Header -->
 
-        <div class="row app-page-controls">
-  <div class="container">
-  <div class="col-md-12 "> 
-  <button class="btn btn-primary" type="submit" id="startCart">Start Cart</button> 
-  <button class="btn btn-info" type="submit" id="cancelCart">Clear Cart</button>
-  <button class="btn btn-default" type="submit" id="checkoutcart" >Checkout</button>
-  </div>
-  </div>
-</div>
+        
 
         <!-- Title -->
         
 <div class="row">
      <div class="container">       
 <div class="col-lg-12">
-                
+ <br />
+ <br />              
 <h1>Latest Courses</h1>
          
        <!-- PRODUCTS -->
@@ -52,9 +45,12 @@
    <footerreplace metal:use-macro="../templating/footer.xhtml/page_footer">
     </footerreplace>
     
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+
+<script src="../js/jquery-2.2.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script> 
+
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>   -->
     
 <script>
         /*&lt;![CDATA[*/
@@ -88,7 +84,7 @@
                 var shoppingCartList = $("#shoppingCart");
                 var item = "&lt;li data-item-sku='" + sku + "' data-item-qty='" + desc + "'&gt;"
                     + desc + " = $" + price
-                    + " &lt;input type='button' data-remove-button='remove' value='X'/&gt;&lt;/li&gt;";
+                    + " &lt;input type='button' class='menu-remove' data-remove-button='remove' value='x'/&gt;&lt;/li&gt;";
                 shoppingCartList.append(item);
             });
             // remove items from the car
@@ -149,6 +145,7 @@
                     data: {action: "checkoutcart", items: itemsAsJSON},
                     success: function(returnedData) {
                         console.log("cart check out response: ", returnedData);
+                        alert ("Checked out");
                     },
                     error: function(jqXHR, textStatus, errorThrown) {
                         console.log(jqXHR.statusText, textStatus);
